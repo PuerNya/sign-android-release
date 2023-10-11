@@ -45,7 +45,9 @@ export async function signApkFile(
     core.debug(`Found 'apksigner' @ ${apkSigner}`);
 
     // apksigner sign --ks my-release-key.jks --out my-app-release.apk my-app-unsigned-aligned.apk
-    const signedApkFile = apkFile.replace('.apk', '-signed.apk');
+    let needReplace = '.apk'
+    if ( apkFile.endsWith( '-unsigned.apk' ) ) needReplace = '-unsigned.apk'
+    const signedApkFile = apkFile.replace(needReplace, '-signed.apk');
     const args = [
         'sign',
         '--ks', signingKeyFile,
