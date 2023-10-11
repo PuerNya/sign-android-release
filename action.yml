@@ -1,6 +1,6 @@
 name: 'Sign Android release'
 description: 'An action to sign an Android release APK or AAB'
-author: 'r0adkll'
+author: 'PuerNya'
 branding:
   icon: 'edit'
   color: 'orange'
@@ -54,5 +54,5 @@ outputs:
   signedReleaseFile12:
     description: 'The 12th signed release APK or AAB file'
 runs:
-  using: 'node12'
+  using: 'node20'
   main: 'lib/main.js'

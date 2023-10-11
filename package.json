@@ -1,6 +1,6 @@
 {
   "name": "sign-android-release",
-  "version": "1.0.4",
+  "version": "2",
   "private": true,
   "description": "GitHub action used to sign Android release packages",
   "main": "lib/main.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/r0adkll/sign-android-release.git"
+    "url": "git+https://github.com/PuerNya/sign-android-release.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "r0adkll",
+  "author": "PuerNya",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
